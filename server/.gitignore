@@ -29,3 +29,5 @@ setup.mov
 *.mov
 *.mp4
 *.avi
+
+.env
