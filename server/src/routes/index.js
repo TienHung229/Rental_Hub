@@ -28,7 +28,7 @@ function routes(app) {
     app.get('/api/recharge-user', userRoutes);
     app.post('/api/update-user', userRoutes);
     app.post('/api/change-password', userRoutes);
-
+    app.post('/api/update-post', postRoutes);
     app.get('/api/get-users', userRoutes);
     app.get('/api/get-admin-stats', userRoutes);
     app.get('/api/get-recharge-stats', userRoutes);
