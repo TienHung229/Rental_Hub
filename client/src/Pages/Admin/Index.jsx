@@ -23,6 +23,7 @@ const { Header, Sider, Content } = Layout;
 const cx = classNames.bind(styles);
 
 function Admin() {
+    
     const [collapsed, setCollapsed] = useState(false);
     const navigate = useNavigate();
 

@@ -119,6 +119,14 @@ export const requestCreatePost = async (data) => {
     return res.data;
 };
 
+export const requestUpdatePost = async (id, data) => {
+    // Sử dụng 'request' thay vì 'axiosClient'
+    // Gộp id vào chung với data để gửi lên body
+    const res = await request.post('/api/update-post', { id, ...data });
+    return res.data;
+};
+
+
 export const requestGetNewPost = async () => {
     const res = await request.get('/api/get-new-post');
     return res.data;

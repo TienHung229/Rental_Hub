@@ -1,8 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/images/rentalhub_logo.svg';
-
+import logo from '../../assets/images/RentalHub_logo.svg';
 import { Dropdown, Menu, Avatar, Space } from 'antd';
 import { UserOutlined, LogoutOutlined, ProfileOutlined, SearchOutlined } from '@ant-design/icons';
 

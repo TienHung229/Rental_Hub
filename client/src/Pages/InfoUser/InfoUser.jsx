@@ -14,6 +14,7 @@ import {
   FileTextOutlined,
   DollarCircleOutlined,
   LockOutlined,
+  DashboardOutlined
 } from "@ant-design/icons";
 import Header from "../../Components/Header/Header";
 import { useState } from "react";
@@ -22,9 +23,9 @@ import ManagerPost from "./Components/ManagerPost/ManagerPost";
 import { useStore } from "../../hooks/useStore";
 import RechargeUser from "./Components/RechargeUser/RechargeUser";
 import ChangePassword from "./Components/ChangePassword/ChangePassword";
-
+import Admin from '../Admin/Index';
 import userNotFound from "../../assets/images/img_default.svg";
-
+import { useNavigate } from "react-router-dom";
 const { Sider, Content } = Layout;
 const { Title, Text } = Typography;
 
@@ -32,7 +33,7 @@ function InfoUser() {
   const [selectedMenu, setSelectedMenu] = useState("personal");
 
   const { dataUser } = useStore();
-
+  const navigate = useNavigate(); // Hook chuyển trang
   const menuItems = [
     {
       key: "personal",
@@ -56,9 +57,24 @@ function InfoUser() {
     },
   ];
 
-  const handleMenuClick = (e) => {
-    setSelectedMenu(e.key);
-  };
+  if ( dataUser?.isAdmin === true) {
+    menuItems.push({
+        key: "admin_dashboard",
+        icon: <DashboardOutlined />,
+        label: "Trang Admin", // Nút này chỉ Admin mới thấy
+    });
+}
+
+
+const handleMenuClick = (e) => {
+  if (e.key === "admin_dashboard") {
+     // Nếu bấm vào nút Admin -> Chuyển hướng sang trang /admin
+     navigate("/admin"); 
+  } else {
+     // Các nút khác -> Vẫn đổi tab bình thường
+     setSelectedMenu(e.key); 
+  }
+};
 
   return (
     <Layout style={{ minHeight: "100vh", width: "80%", margin: "100px auto" }}>

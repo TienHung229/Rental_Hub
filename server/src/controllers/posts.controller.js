@@ -92,6 +92,30 @@ class controllerPosts {
         }).send(res);
     }
 
+    async updatePost(req, res) {
+        // Lấy id và các dữ liệu còn lại từ body
+        const { id, ...payload } = req.body;
+
+        if (!id) {
+            throw new BadRequestError('Thiếu ID bài viết');
+        }
+
+        // Kiểm tra xem bài viết có tồn tại không
+        const findPost = await modelPost.findById(id);
+        if (!findPost) {
+            throw new BadRequestError('Bài viết không tồn tại');
+        }
+
+        // Thực hiện update
+        // { new: true } để trả về dữ liệu mới sau khi update
+        const updatedPost = await modelPost.findByIdAndUpdate(id, payload, { new: true });
+
+        return new OK({
+            message: 'Cập nhật bài viết thành công',
+            metadata: updatedPost,
+        }).send(res);
+    }
+
     async getPosts(req, res) {
         const { category, priceRange, areaRange, typeNews } = req.query;
 
