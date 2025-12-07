@@ -30,6 +30,7 @@ function CardBody({ post }) {
                     </div>
                 </div>
             </Link>
+            <Link to={`/chi-tiet-tin-dang/${post._id}`}>
             <div className={cx('room-info')}>
                 <h2 className={cx('room-title')}>
                     <HomeOutlined className={cx('icon')} />
@@ -50,6 +51,8 @@ function CardBody({ post }) {
                     </span>
                 </div>
             </div>
+            </Link>
+            
             <div className={cx('user-info')}>
                 <img src={post.user?.avatar || imgDefault} alt="" />
                 <div className={cx('info-container')}>
