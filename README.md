@@ -119,10 +119,6 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 - Xác thực đa lớp: JWT + OAuth2.
 - Phân quyền API rõ ràng giữa User và Admin.
 
----
-
-# 🚀 Demo
-
 
 ---
 
@@ -135,7 +131,7 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 - Ứng dụng mobile iOS/Android sử dụng chung API.
 
 ---
-# ** Một số hình ảnh của ứng dụng**
+# **🚀 Demo**
 
 - Giao diện mới vào trang
 ![giao diện đầu vào](https://github.com/user-attachments/assets/59236c04-1905-4ec3-b603-4b8c4d29c44c)
@@ -160,7 +156,7 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 
 ---
 
-# **🙏 Lời cảm ơn**
+# **❤️ Lời cảm ơn**
 
 Nhóm xin gửi lời cảm ơn đến **giảng viên** đã truyền đạt kiến thức và định hướng giúp chúng em hoàn thành dự án này.  
 Cảm ơn thầy và các bạn đã quan tâm và theo dõi!
