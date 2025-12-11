@@ -10,7 +10,7 @@
 
 ---
 
-**🏠 Giới thiệu dự án**
+# **🏠 Giới thiệu dự án**
 
 **Rental Hub** là một nền tảng đăng tin cho thuê phòng trọ hiện đại, hướng tới việc giải quyết những vấn đề lớn của thị trường thuê trọ hiện nay như:
 
@@ -23,20 +23,20 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 
 ---
 
-**🎯 Mục tiêu & Giá trị**
+# **🎯 Mục tiêu & Giá trị**
 
-**1. Tự động hóa trải nghiệm thuê trọ**
+## **1. Tự động hóa trải nghiệm thuê trọ**
 
 - Tư vấn bằng AI từ database có sẵn.
 - Tìm kiếm phòng trọ thông minh bằng AI Search.
 - Chat và liên hệ chủ phòng ngay trên nền tảng.
 
-**2. Kết nối hiệu quả & minh bạch**
+## **2. Kết nối hiệu quả & minh bạch**
 
 - Công cụ lọc mạnh mẽ: giá, diện tích, loại phòng…
 - Xem chi tiết bài đăng và thông tin chủ phòng rõ ràng.
 
-**3. Tăng độ tin cậy và an toàn**
+## **3. Tăng độ tin cậy và an toàn**
 
 - Hệ thống xác thực tài khoản (OAuth2, JWT).
 - Phân quyền API (User/Admin).
@@ -44,43 +44,43 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 
 ---
 
-**⚙️ Chức năng chính**
+# **⚙️ Chức năng chính**
 
-**🔐 Xác thực & phân quyền**
+## **🔐 Xác thực & phân quyền**
 
 - Đăng ký, đăng nhập, đăng nhập nhanh qua OAuth 2.0.
 - Quản lý phiên bằng JWT.
 - Phân quyền: User / Admin.
 
-**🔎 Tìm kiếm & xem phòng trọ**
+## **🔎 Tìm kiếm & xem phòng trọ**
 
 - Tìm kiếm AI theo từ khóa thông minh.
 - Lọc bài theo giá, diện tích, loại phòng…
 - Xem chi tiết + liên hệ chủ phòng.
 
-**📝 Quản lý bài đăng**
+## **📝 Quản lý bài đăng**
 
 - Tạo bài đăng phòng trọ với hình ảnh.
 - Admin duyệt bài, từ chối bài và gửi thông báo qua email.
 - Người dùng quản lý các bài đăng cá nhân.
 
-**💬 Tư vấn AI**
+## **💬 Tư vấn AI**
 
 - Chat AI dựa trên database có sẵn để gợi ý phòng phù hợp.
 
-**💳 Thanh toán**
+## **💳 Thanh toán**
 
 - Tích hợp cổng thanh toán **VNPay**.
 
-**📡 Real-time**
+## **📡 Real-time**
 
 - Tích hợp **Socket.IO** cho chức năng Chat.
 
 ---
 
-**🛠 Tech Stack**
+# **🛠 Tech Stack**
 
-**Backend**
+## **Backend**
 
 - Node.js (Runtime)
 - Express.js (Framework)
@@ -91,7 +91,7 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 - Cloudinary (Upload ảnh)
 - Render.com (Deploy Backend)
 
-**Frontend**
+## **Frontend**
 
 - React.js (SPA)
 - Vite (Build Tool)
@@ -99,21 +99,21 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 - React Hooks (State)
 - Vercel (Deploy Frontend)
 
-**AI**
+## **AI**
 
 - Google Gemini API – phục vụ tính năng tư vấn và tìm kiếm thông minh.
 
 ---
 
-**🧱 Kiến trúc & Hệ thống**
+# **🧱 Kiến trúc & Hệ thống**
 
-**Khả năng mở rộng**
+## **Khả năng mở rộng**
 
 - Node.js non-blocking, hỗ trợ hàng ngàn request đồng thời.
 - MongoDB indexing giúp tối ưu truy vấn dữ liệu.
 - Kiến trúc module hóa dễ mở rộng tính năng như: chatbot, ví điện tử, bản đồ phòng trọ…
 
-**Bảo mật**
+## **Bảo mật**
 
 - Hash mật khẩu trước khi lưu DB.
 - Xác thực đa lớp: JWT + OAuth2.
@@ -121,17 +121,7 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 
 ---
 
-**🚀 Demo**
-
-**Website:**  
-🔗 [https://rental-hub-client.vercel.app/](https://rental-hub-client.vercel.app/)
-
-**Video Demo:**  
-(Thêm link video nếu nhóm có)
-
----
-
-**🔮 Hướng phát triển tương lai**
+# **🔮 Hướng phát triển tương lai**
 
 - Mở rộng bộ lọc theo bản đồ / khu vực.
 - Tính năng đánh giá chất lượng phòng từ người thuê thật.
@@ -141,7 +131,7 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 
 ---
 
-**🙏 Lời cảm ơn**
+# **🙏 Lời cảm ơn**
 
 Nhóm xin gửi lời cảm ơn đến **giảng viên** đã truyền đạt kiến thức và định hướng giúp chúng em hoàn thành dự án này.  
-Cảm ơn các bạn đã quan tâm và theo dõi!
+Cảm ơn thầy và các bạn đã quan tâm và theo dõi!
